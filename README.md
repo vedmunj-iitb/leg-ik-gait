@@ -19,7 +19,8 @@ hip = atan2(x, z) - atan2(b sin(knee), a + b cos(knee))
 ```
 
 If cos(knee) comes out above 1 or below -1 the foot is out of reach and `ik()` returns false.
-`fk()` goes the other way, and the test checks that `fk(ik(p))` gives back `p` everywhere in reach.
+`fk()` goes the other way, and the test checks that `fk(ik(p))` gives back `p` at every reachable
+point of a 5 mm grid below the hip (x from -60 to 60 mm, z from 20 to 120 mm).
 
 ## Gait
 
